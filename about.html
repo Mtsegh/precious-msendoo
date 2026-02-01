@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Executive Assistant Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter bg-cream">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-2xl font-playfair font-bold text-navy">
+                    EA<span class="text-bronze">Professional</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link active text-navy hover:text-bronze transition-colors duration-300">About</a>
+                    <a href="services.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Services</a>
+                    <a href="portfolio.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Portfolio</a>
+                    <a href="contact.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-navy focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden pb-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Home</a>
+                <a href="about.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">About</a>
+                <a href="services.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-navy/5 via-cream to-bronze/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold text-navy mb-6 fade-in">
+                About Me
+            </h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto fade-in-delay">
+                Dedicated to transforming chaos into clarity and empowering leaders to focus on their vision
+            </p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="fade-in relative order-2 md:order-1">
+                    <div style="background-image: url('precious.jpg'); background-size: cover;" class="relative w-full h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-br from-bronze/20 to-navy/20 flex items-center justify-center">
+                            
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-bronze/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-navy/20 rounded-full blur-3xl"></div>
+                </div>
+                <div class="fade-in-delay order-1 md:order-2">
+                    <h2 class="font-playfair text-4xl font-bold text-navy mb-6">
+                        Precision, Strategy & Excellence
+                    </h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-lg">
+                        <p>
+                            With over five years of experience supporting executives, entrepreneurs, and business leaders, 
+                            I specialize in transforming operational complexity into seamless efficiency. My approach combines 
+                            strategic thinking with meticulous attention to detail, ensuring nothing falls through the cracks.
+                        </p>
+                        <p>
+                            I thrive in fast-paced environments where priorities shift rapidly and precision matters. From 
+                            managing multi-timezone calendars to coordinating high-stakes events and handling confidential 
+                            information, I bring a proactive mindset and unwavering reliability to every task.
+                        </p>
+                        <p>
+                            My mission is simple: to free you from administrative burdens so you can focus on what you do 
+                            best—leading, innovating, and growing your business. When you work with me, you gain a trusted 
+                            partner who anticipates needs, solves problems, and consistently delivers results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Skills Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-4">
+                    Core Competencies
+                </h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                    A comprehensive skill set refined through years of executive support excellence
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">Time Management</h3>
+                    <p class="text-gray-600">
+                        Expert calendar management across multiple time zones with strategic scheduling to maximize productivity.
+                    </p>
+                </div>
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">Strategic Planning</h3>
+                    <p class="text-gray-600">
+                        Proactive project coordination and process optimization to streamline workflows and eliminate inefficiencies.
+                    </p>
+                </div>
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">Process Optimization</h3>
+                    <p class="text-gray-600">
+                        Identifying bottlenecks and implementing solutions that enhance operational efficiency and team productivity.
+                    </p>
+                </div>
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">Confidentiality</h3>
+                    <p class="text-gray-600">
+                        Trusted handling of sensitive information with the highest standards of discretion, integrity, and compliance.
+                    </p>
+                </div>
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">CRM Expertise</h3>
+                    <p class="text-gray-600">
+                        Proficient in HubSpot, Salesforce, and productivity tools like Notion, Trello, and Asana for seamless operations.
+                    </p>
+                </div>
+                <div class="skill-card bg-cream p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tasks text-2xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-navy mb-3">Multitasking</h3>
+                    <p class="text-gray-600">
+                        Managing multiple high-priority projects simultaneously while maintaining exceptional quality and attention to detail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy/90">
+        <div class="max-w-4xl mx-auto text-center">
+            <i class="fas fa-quote-left text-5xl text-bronze mb-8"></i>
+            <blockquote class="font-playfair text-3xl md:text-4xl text-navy mb-8 leading-relaxed">
+                "Success isn't about doing everything yourself—it's about partnering with the right people 
+                who understand your vision and execute with excellence."
+            </blockquote>
+            <p class="text-xl text-cream/90">
+                My commitment is to be that trusted partner, delivering results that exceed expectations every single time.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-cream">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                Let's Work Together
+            </h2>
+            <p class="text-xl text-gray-700 mb-8">
+                Ready to experience the difference that professional executive support can make?
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-primary inline-flex items-center justify-center">
+                    Get In Touch
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="services.html" class="btn-secondary inline-flex items-center justify-center">
+                    View Services
+                    <i class="fas fa-list ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy/95 text-gray py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4">EA<span class="text-bronze">Professional</span></h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Professional Virtual Executive Assistant dedicated to delivering excellence and driving results.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-700 hover:text-bronze transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-700 hover:text-bronze transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-700 hover:text-bronze transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-700 hover:text-bronze transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-700 hover:text-bronze transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/precious-aondona-9a7766296" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:aondonapreciousmsendoo@gmail.com" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+2347073850087" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <span class="self-center">+234 707 3850 087</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 pt-8 text-center text-gray-700">
+                <p>&copy; 2026 EA Professional. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

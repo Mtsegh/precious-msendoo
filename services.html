@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Executive Assistant Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter bg-cream">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-2xl font-playfair font-bold text-navy">
+                    EA<span class="text-bronze">Professional</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">About</a>
+                    <a href="services.html" class="nav-link active text-navy hover:text-bronze transition-colors duration-300">Services</a>
+                    <a href="portfolio.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Portfolio</a>
+                    <a href="contact.html" class="nav-link text-navy hover:text-bronze transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-navy focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden pb-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Home</a>
+                <a href="about.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">About</a>
+                <a href="services.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-navy hover:text-bronze transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-navy/5 via-cream to-bronze/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold text-navy mb-6 fade-in">
+                Services
+            </h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto fade-in-delay">
+                Comprehensive executive support tailored to your unique needs and business goals
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-alt text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Calendar & Schedule Management</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Expert coordination of executive calendars across multiple time zones. Strategic scheduling, 
+                        meeting preparation, and conflict resolution to ensure optimal time management.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Multi-timezone coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Priority-based scheduling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Meeting preparation & agendas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plane text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Travel Planning & Coordination</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Comprehensive travel arrangements from booking to itinerary management. Cost optimization 
+                        and seamless coordination for domestic and international travel.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Flight & accommodation booking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Detailed itinerary creation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Travel expense management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Meeting & Event Coordination</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        End-to-end event planning and meeting coordination. From logistics to follow-up, ensuring 
+                        every detail is handled professionally.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Virtual & in-person coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Vendor & venue management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Post-event reporting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Document Management</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Professional drafting, editing, and formatting of business documents. Organization and 
+                        version control for seamless document workflows.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Professional document creation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Editing & proofreading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>File organization systems</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Data Entry & Records Management</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Accurate data entry and comprehensive records management. Database maintenance and 
+                        reporting to keep your information organized and accessible.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>CRM data management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Database organization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Quality assurance checks</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-bar text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Report Preparation & Presentation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Creation of professional reports, presentations, and business materials. Data visualization 
+                        and formatting for maximum impact.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Executive presentations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Data visualization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Business reporting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 7 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Email & Communication Management</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Strategic inbox management and professional correspondence. Filter, prioritize, and respond 
+                        to communications on your behalf.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Email triage & prioritization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Professional correspondence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Follow-up management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 8 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Project Coordination</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        End-to-end project support from planning to execution. Task tracking, team coordination, 
+                        and progress reporting for successful outcomes.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Project planning & tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Team coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Milestone reporting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 9 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">CRM & Productivity Tools</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Expert management of CRM systems and productivity platforms. HubSpot, Trello, Notion, 
+                        Asana, and other tools to optimize your workflows.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>HubSpot & CRM management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Project management tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Workflow automation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 10 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Research & Information Gathering</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Comprehensive research support for business decisions. Market research, competitive analysis, 
+                        and prospect identification to drive strategic initiatives.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Market & competitor research</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Lead generation & prospecting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Data compilation & analysis</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 11 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Basic Bookkeeping & Expense Tracking</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Professional expense management and basic bookkeeping support. Invoice processing, 
+                        receipt organization, and financial reporting.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Expense tracking & reporting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Invoice processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Budget monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 12 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-friends text-3xl text-bronze"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">HR Support & Recruitment</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Comprehensive HR administrative support. Recruitment coordination, onboarding facilitation, 
+                        and employee engagement initiatives.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Recruitment process support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Onboarding & training coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-bronze mt-1 mr-2"></i>
+                            <span>Employee records management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-navy to-navy/90">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                Ready to Get Started?
+            </h2>
+            <p class="text-xl text-cream/90 mb-8 leading-relaxed">
+                Let's discuss how these services can be tailored to your specific needs and business objectives.
+            </p>
+            <a href="contact.html" class="btn-primary inline-flex items-center">
+                Schedule a Consultation
+                <i class="fas fa-calendar-check ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy/95 text-gray py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4">EA<span class="text-bronze">Professional</span></h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Professional Virtual Executive Assistant dedicated to delivering excellence and driving results.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-700 hover:text-bronze transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-700 hover:text-bronze transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-700 hover:text-bronze transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-700 hover:text-bronze transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-700 hover:text-bronze transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/precious-aondona-9a7766296" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:aondonapreciousmsendoo@gmail.com" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+2347073850087" class="w-10 h-10 bg-bronze/20 rounded-full flex items-center justify-center hover:bg-bronze transition-colors">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <span class="self-center">+234 707 3850 087</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 pt-8 text-center text-gray-700">
+                <p>&copy; 2026 EA Professional. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
