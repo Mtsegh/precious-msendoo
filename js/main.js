@@ -112,7 +112,7 @@ function initFormValidation() {
     });
 
     // Form submission
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
 
         // Validate all fields
@@ -130,26 +130,33 @@ function initFormValidation() {
             submitBtn.disabled = true;
 
             // Simulate form submission (replace with actual API call)
-            setTimeout(function() {
-                // Hide loading state
-                submitBtn.classList.remove('loading');
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
+            try {
+                const response = await fetch('https://formspree.io/f/meezrbqp', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: new FormData(contactForm)
+                });
 
-                // Show success message
+                if (response.ok) {
                 formSuccess.classList.remove('hidden');
-                
-                // Reset form
                 contactForm.reset();
 
-                // Hide success message after 5 seconds
-                setTimeout(function() {
+                setTimeout(() => {
                     formSuccess.classList.add('hidden');
                 }, 5000);
 
-                // Scroll to success message
-                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 1500);
+                formSuccess.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    alert('Something went wrong. Try again.');
+                }
+            } catch (error) {
+                    alert('Network error. Please try again.');
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
         }
     });
 
