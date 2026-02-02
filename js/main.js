@@ -128,15 +128,15 @@ function initFormValidation() {
             submitBtn.classList.add('loading');
             submitBtn.innerHTML = 'Sending...';
             submitBtn.disabled = true;
-
+            
             // Simulate form submission (replace with actual API call)
             try {
                 const response = await fetch('https://formspree.io/f/meezrbqp', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json'
-                },
-                body: new FormData(contactForm)
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: new FormData(contactForm)
                 });
 
                 if (response.ok) {
@@ -154,6 +154,7 @@ function initFormValidation() {
             } catch (error) {
                     alert('Network error. Please try again.');
             } finally {
+                submitBtn.classList.remove('loading');
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
             }
